@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>My Web Page</title>
+</head>
+<body>
+
+    <header>
+        
+        <h1>My Website</h1>
+        <img src="image/2056977.svg" alt="Logo">
+              
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <main>
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone" name="phone"><br>
+                <label for="employment">Employment Status:</label><br>
+                <select id="employment" name="employment" required>
+                    <option value="">Select Option</option>
+                    <option value="student">Student</option>
+                    <option value="fulltime">Employed Full-time</option>
+                    <option value="parttime">Employed Part-time</option>
+                    <option value="retired">Retired</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>How did you hear about our site?</legend>
+                <input type="radio" id="social" name="source" value="social" required>
+                <label for="social">Social Media</label><br>
+                <input type="radio" id="friend" name="source" value="friend" required>
+                <label for="friend">Friend</label><br>
+                <input type="radio" id="search" name="source" value="search" required>
+                <label for="search">Search Engine</label><br>
+                <input type="radio" id="other" name="source" value="other" required>
+                <label for="other">Other</label>
+            </fieldset>
+            <fieldset>
+                <legend>Tell Us what you think!</legend>
+                <label for="comments">Comments:</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here" required></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Submit</legend>
+                <input type="checkbox" id="robot" name="robot">
+                <label for="robot">I am not a robot.</label><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Parveen, Student Number: </p>
+    </footer>
+    
+      
+</body>
+</html>
